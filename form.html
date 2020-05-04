@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<head>
+  <!-- <link href='https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css' rel='stylesheet' type='text/css'> -->
+  <!-- <link href='//cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/1.8/css/bootstrap-switch.css' rel='stylesheet' type='text/css'> -->
+  <!-- <link href='//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/css/datepicker.min.css' rel='stylesheet' type='text/css'> -->
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="custom.css">
+  <!-- <link href='https://davidstutz.github.io/bootstrap-multiselect/css/bootstrap-multiselect.css' rel='stylesheet' type='text/css'> -->
+  <!-- <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js' type='text/javascript'></script> -->
+  <script src="jQuery.js" charset="utf-8"></script>
+  <script src="bootstrap.min.js" charset="utf-8"></script>
+  <script src="bootstrap.js.map" charset="utf-8"></script>
+  <!-- <script src='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/js/bootstrap.min.js' type='text/javascript'></script> -->
+  <!-- <script src='//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/js/bootstrap-datepicker.min.js' type='text/javascript'></script> -->
+  <!-- <script src='//cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/1.8/js/bootstrap-switch.min.js' type='text/javascript'></script> -->
+  <!-- <script src='https://davidstutz.github.io/bootstrap-multiselect/js/bootstrap-multiselect.js' type='text/javascript'></script> -->
+</head>
+<body>
+  <div class='container'>
+    <div class='panel panel-primary dialog-panel'>
+      <div class='panel-heading'>
+        <h5>Form 1</h5>
+          <div class="">
+            <div class="">
+              <input type="text" name="" value="" placeholder="Reg. No.">
+              <button type="button" class="" name="button"> Check and Validate </button>
+            </div>
+            <script type="text/javascript">
+            function handleFileSelect(evt) {
+            var files = evt.target.files; // FileList object
+
+            // files is a FileList of File objects. List some properties.
+            var output = [];
+            for (var i = 0, f; f = files[i]; i++) {
+              output.push('<li><strong>', escape(f.name), '</strong> (', f.type || 'n/a', ') - ',
+                          f.size, ' bytes, last modified: ',
+                          f.lastModifiedDate ? f.lastModifiedDate.toLocaleDateString() : 'n/a',
+                          '</li>');
+            }
+            document.getElementById('list').innerHTML = '<ul>' + output.join('') + '</ul>';
+          }
+
+          document.getElementById('files').addEventListener('change', handleFileSelect, false);
+            </script>
+
+
+            <input type="file" id="files" name="files[]" multiple />
+            <output id="list"></output>
+
+
+          </div>
+      </div>
+      <div class='panel-body'>
+        <form class='form-horizontal' role='form' action="form12.html">
+          <!-- <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='id_accomodation'>Accomodation</label>
+            <div class='col-md-2'>
+              <select class='form-control' id='id_accomodation'>
+                <option>RV</option>
+                <option>Tent</option>
+                <option>Cabin/Lodging</option>
+              </select>
+            </div>
+          </div> -->
+
+
+          <!--
+
+            NAME AND MOBILE
+
+          -->
+          <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='id_title'>Name</label>
+            <div class='col-md-8'>
+              <div class='col-md-2'>
+                <div class='form-group internal'>
+                  <select class='form-control' id='id_title'>
+                    <option>Mr</option>
+                    <option>Ms</option>
+                    <option>Mrs</option>
+                    <option>Miss</option>
+                  </select>
+                </div>
+              </div>
+              <div class='col-md-3 indent-small'>
+                <div class='form-group internal'>
+                  <input class='form-control' id='id_first_name' placeholder='First Name' type='text'>
+                </div>
+              </div>
+              <div class='col-md-3 indent-small'>
+                <div class='form-group internal'>
+                  <input class='form-control' id='id_middle_name' placeholder='Middle Name' type='text'>
+                </div>
+              </div>
+              <div class='col-md-3 indent-small'>
+                <div class='form-group internal'>
+                  <input class='form-control' id='id_last_name' placeholder='Last Name' type='text'>
+                </div>
+              </div>
+            </div>
+            <label class='control-label col-md-2 col-md-offset-2' for='id_title'>Mobile No</label>
+            <div class='col-md-8'>
+              <div class='col-md-4 indent-small'>
+                <div class='form-group internal'>
+                  <input class='form-control' id='id_mobile_number' placeholder='Mobile Number' type='text'>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!--
+
+            REGISTRATION DETAILS
+
+          -->
+          <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='id_adults'>Registration Details</label>
+            <div class='col-md-8'>
+              <div class='col-md-3'>
+                <div class='form-group internal'>
+                  <input class='form-control col-md-8' id='id_adults' placeholder='Registration Number' type='number'>
+                </div>
+              </div>
+              <!-- <div class='col-md-3 indent-small'>
+                <div class='form-group internal'>
+                  <input class='form-control' id='id_children' placeholder='2-17 years' type='number'>
+                </div>
+              </div> -->
+            </div>
+            <label class='control-label col-md-2 col-md-offset-2' for='id_adults'>Renewal Date</label>
+            <div class='col-md-8'>
+              <div class='col-md-3'>
+                <div class='col-md-3 indent-small'>
+                  <div class='form-group internal'>
+                    <input id='id_renewal_dd' placeholder='DD' type='number' maxlength="2">
+                  </div>
+                </div>
+                <div class='col-md-3 indent-small'>
+                  <div class='form-group internal'>
+                    <input id='id_renewal_mm' placeholder='MM' type='number' maxlength="2">
+                  </div>
+                </div>
+                <div class='col-md-3 indent-small'>
+                  <div class='form-group internal'>
+                    <input id='id_renewal_yyyy' placeholder='YYYY' type='number' maxlength="4">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <label class='control-label col-md-2 col-md-offset-2' for='id_adults'>Renewal Date</label>
+            <div class='col-md-7'>
+              <div class='col-md-3 indent-small'>
+                <div class='form-group internal'>
+                  <input id='id_aadhar_1' placeholder='AADHAR' type='number' maxlength="4">
+                </div>
+              </div>
+              <div class='col-md-3 indent-small'>
+                <div class='form-group internal'>
+                  <input id='id_aadhar_1' placeholder='CARD' type='number' maxlength="4">
+                </div>
+              </div>
+              <div class='col-md-3 indent-small'>
+                <div class='form-group internal'>
+                  <input id='id_aadhar_1' placeholder='NUMBER' type='number' maxlength="4">
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <!--
+
+            BANK DETAILS
+
+          -->
+          <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='id_bank'>Bank details</label>
+            <div class='col-md-6'>
+              <div class='form-group'>
+                <div class='col-md-11'>
+                  <input class='form-control' id='id_bank_name' placeholder='Name of Bank' type='text'>
+                </div>
+              </div>
+              <div class='form-group internal'>
+                <div class='col-md-11'>
+                  <input class='form-control' id='id_branch' placeholder='Branch' type='text'>
+                </div>
+              </div>
+              <div class='form-group'>
+                <div class='col-md-11'>
+                  <input class='form-control' id='id_bank_ifsc' placeholder='IFSC Code' type='text'>
+                </div>
+              </div>
+              <div class='form-group'>
+                <div class='col-md-11'>
+                  <input class='form-control' id='id_bank_account_no' placeholder='Account Number' type='text'>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!--
+
+            SCHEME DETAILS
+
+          -->
+
+          <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='id_checkin'>Scheme Deatils</label>
+            <div class='col-md-8'>
+              <div class='col-md-3'>
+                <div class='form-group internal input-group'>
+                  <input class='form-control datepicker' id='id_scheme_no' placeholder='Scheme Holder'>
+                </div>
+              </div>
+              <label class='control-label col-md-2' for='id_checkout'>Amount</label>
+              <div class='col-md-3'>
+                <div class='form-group internal input-group'>
+                  <input class='form-control datepicker' id='id_scheme_no' placeholder='Amount Demand'>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!--
+              DOCUMENT DETAILS YES/NO
+          -->
+          <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='id_equipment'>Documents</label>
+            <div class='col-md-8'>
+              <div class='col-md-4'>
+                <div class="container">
+                  <label for="id_id_card"> ID Card </label>
+                  <input type="checkbox" id="id_checkbox_id_card" />
+                </div>
+              </div>
+
+              <div class='col-md-4'>
+                <div class="container">
+                  <label for="id_bank_passbook"> Bank Passbook </label>
+                  <input type="checkbox" id="id_checkbox_id_bank_passbook" />
+                </div>
+              </div>
+
+              <div class='col-md-4'>
+                <div class="container">
+                  <label for="id_residential_proof"> Residential Proof </label>
+                  <input type="checkbox" id="id_checkbox_residential_proof" />
+                </div>
+              </div>
+
+              <div class='col-md-4'>
+                <div class="container">
+                  <label for="id_residential_proof"> Residential Proof </label>
+                  <input type="checkbox" id="id_checkbox_residential_proof" />
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+
+          <!-- <div class="container">
+            <label class="switch" for="checkbox">
+              <input type="checkbox" id="checkbox" />
+              <div class="slider round"></div>
+            </label>
+          </div> -->
+
+
+
+
+
+          <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='id_comments'>Comments</label>
+            <div class='col-md-6'>
+              <textarea class='form-control' id='id_comments' placeholder='Additional comments' rows='3'></textarea>
+            </div>
+          </div>
+          <div class='form-group'>
+            <div class='col-md-offset-4 col-md-3'>
+              <button class='btn-lg btn-primary' type='submit'>Request Reservation</button>
+            </div>
+            <div class='col-md-3'>
+              <button class='btn-lg btn-danger' style='float:right' type='submit'>Cancel</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
