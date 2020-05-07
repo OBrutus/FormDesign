@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>FORM</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div class="container p-4">
+            <h6>1.Applicant's details<span class="text-danger"><b>*</b></span></h6>
+                 <div class="row border border-dark rounded p-4" style="background:rgb(242, 248, 255)">
+
+                    <!--
+					APPLICANT DETAILS
+				-->
+				
+                     <form>
+                            <div class='form-group internal col-md-12'>                             
+                                    <label for="id_title"><h6>Title:-</h6></label>
+                                    <select class='form-control' id='id_title'>
+                                    <option>Mr</option>
+                                    <option>Ms</option>
+                                    <option>Mrs</option>
+                                    <option>Miss</option>
+                                    </select>
+                                </div> 
+                     </form>
+                        <form>
+                            <div class="form-group-internal col md-2">
+                                <label for="First Name"><h6>First Name:-</h6></label><br>
+                                <input  type="text" placeholder="  First Name" id="First Name" class="form-cotrol"></input>
+                            </div>
+
+                        </form>
+                        <form>
+                            <div class="form-group-internal col md-2">
+                                <label for="Middle Name"><h6>Middle Name:-</h6></label><br>
+                                <input  type="text" placeholder="  Middle Name"  id="Middle Name" class="form-cotrol"></input>
+                            </div>
+
+                        </form>
+                        <form>
+                            <div class="form-group-internal col md-2">
+                                <label for="Last Name"><h6>Last Name:-</h6></label><br>
+                                <input  placeholder="  Last Name" type="text" id="Last Name"class="form-cotrol"></input>
+                            </div>
+
+                        </form>
+                        <form>
+                            <div class="form-group-internal col md-2">
+                                <label for="Mobile No."><h6>Mobile No.:-</h6></label><br>
+                                <input placeholder="  Mobile Number" type="text" id="Mobile No." class="form-cotrol"></input>
+                            </div>
+
+                        </form>
+                 </div> 
+                 <!--
+					REGISTRATION DETAILS
+				-->
+				
+                 <br>
+                 <h6>2.Registration details<span class="text-danger"><b>*</b></span></h6>
+                 <div class="row border border-dark rounded p-4" style="background:rgb(242, 248, 255) ">
+                    
+                        <form>
+                            <div class="form-group-internal col md-2">
+                                <label for="Reg.No."><h6>Registration no.:-</h6></label><br>
+                                <input  type="text" placeholder="  Reg.No." id="Reg.No." class="form-cotrol"></input>
+                            </div>
+
+                        </form>
+                        <form>
+                            <div class="form-group-internal col md-2 ">
+                            <label for="Renewal date"><h6 class="pl-6">Renewal date:-</h6></label><br>
+                         <input class="form-control" type="date" value="2011-08-19" id="Renewal date">
+                            </div>
+                          </form>
+                        <form>
+                            <div class="form-group-internal col md-2 ">
+                                    <label for="Aadhar-Card No."><h6>Aadhar-Card No.:-</h6></label><br>
+                                      <input class="form-control" type="text" placeholder="8888 9999 1111" id="Aadhar-Card No.">
+                            </div>
+
+                        </form>
+                       
+                 </div> 
+                 <!--
+					BANK DETAILS
+				-->
+                 <br>
+                 <h6>3.Bank details<span class="text-danger"><b>*</b></span></h6>
+                 <div class="row border border-dark rounded p-4" style="background:rgb(242, 248, 255)">
+                    
+                        <form>
+                            <div class="form-group-internal col md-2">
+                                <label for="Bank Name"><h6>Name of Bank:-</h6></label><br>
+                                <input  type="text" placeholder="  Bank Name" id="Bank Name" class="form-cotrol"></input>
+                            </div>
+
+                        </form>
+                        <form>
+                            <div class="form-group-internal col md-2">
+                                <label for="Branch"><h6>Branch</h6></label><br>
+                                <input  type="text" placeholder="  Branch" id="Branch" class="form-cotrol"></input>
+                            </div>
+
+                        </form>
+                        <form>
+                            <div class="form-group-internal col md-2">
+                                <label for="ifsc_code"><h6>IFSC Code:-</h6></label><br>
+                                <input  placeholder="  IFSC Code" type="text" id="ifsc_code"class="form-cotrol"></input>
+                            </div>
+
+                        </form>
+                        <form>
+                            <div class="form-group-internal col md-2">
+                                <label for="account_no."><h6>Account No.:-</h6></label><br>
+                                <input placeholder=" 1234 5678 9012 3456 " type="text" id="account_no." class="form-cotrol"></input>
+                            </div>
+
+                        </form>
+                 </div> 
+                 	
+				<!--
+					SCHEME DETAILS
+				-->
+                 <br>
+                 <h6>4.Request for finance scheme as given below<span class="text-danger"><b>*</b></span></h6>
+                 <div class="row border border-dark rounded p-4" style="background:rgb(242, 248, 255)">
+                    
+                        <form>
+                            <div class="form-group-internal col md-2">
+                                <label for="id_scheme_no."><h6>Scheme No.</h6></label><br>
+                                <input  type="text" placeholder="  Scheme Number" id="id_scheme_no." name="id_scheme_no." class="form-cotrol"></input>
+                            </div>
+
+                        </form>
+                       
+                        <form>
+                            <div class="form-group-internal col md-2">
+                                <label for="id_amount"><h6>Demand for Amount(&#8377)</h6></label><br>
+                                <input   type="number" placeholder="  Amount" id="id_amount"class="form-cotrol"></input>
+                            </div>
+
+                        </form>
+                     
+                 </div> 
+                 	<!--
+				DOCUMENT DETAILS 5(A)
+            -->
+            <br>
+			
+                <label ><h6>5(A). Document Details<span class="text-danger"><b>*</b></span></h6></label>
+                <div class="row border border-dark rounded p-4" style="background:rgb(242, 248, 255)">
+                <table class="table table-bordered" style="border: black;">
+                    <thead>
+                        <tr>
+                            <th>Serial No:</th>
+                            <th>Document:</th>
+                            <th>Yes/No:</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> 1)</td>
+                            <td>Identity Card </td>
+                            <td><input  type='checkbox'></td>
+                        </tr>
+                        <tr>
+                        <td> 2)</td>
+                        <td>Bank Passbook</td>
+                        <td><input  type='checkbox'></td>
+                        </tr>
+                        <tr>
+                        <td> 3)</td>
+                        <td>Residential Proof</td>
+                        <td><input  type='checkbox'></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            	<!--
+				DOCUMENT DETAILS 5(B)
+            -->
+
+            <br>
+			
+            <label ><h6>5(B). Document Details</h6></label>
+            <div class="row border border-dark rounded" style="background:rgb(242, 248, 255)">
+            <table class="table  table-responsive-md table-bordered " style="border: black;">
+                <thead>
+                    <tr>
+                        <th>Scheme</th>
+                        <th>For Registered construction worker</th>
+                        <th>Document details</th>
+                        <th>Yes/No</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>F01</td>
+                        <td>&#8377 5 lakhs for nominee<br>-if construction worker die on working site</td>
+                        <td>-Death certificate by medical officer<br>-proof of death on working site<br>
+                        -FIR/Contractor certificate</td>
+                        <td><input  type='checkbox'></td>
+                    </tr>
+                    <tr>
+                    <td>F02</td>
+                    <td>&#8377 2 lakhs <br>-for natural death</td>
+                    <td>-Death certificate from medical officer</td>
+                    <td><input  type='checkbox'></td>
+                    </tr>
+                    <tr>
+                    <td>F03</td>
+                    <td>-Upto &#8377 6 lakhs of interest amount for housing loan<br>OR<br>-&#8377 2 lakhs for purchase/construction of house</td>
+                    <td>-proof of housing loan A/c of nationalise bank/<br>-workers loan insurance receipt/<br>-declaration certificate</td>
+                    <td><input  type='checkbox'></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+      
+
+         </div>
+    </body> 
+</html>
