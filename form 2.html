@@ -9,8 +9,6 @@
 
             <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-   
-            <link href="css/bootstrap-imgupload.css" rel="stylesheet">
 
 
           <style>
@@ -28,7 +26,7 @@
                   width:150px;
                   height:150px;
                   border:2px solid #000;
-                  background-color:  rgba(149, 160, 102, 0.8);
+                  background-color:  rgb(168, 180, 114); 
                   /*default text*/
                   display: flex;
                   align-items: center;
@@ -39,7 +37,7 @@
               .image-preview__image
               {
                   display:none;
-                  width=100%;
+                  width:100%;
               }    
 
 
@@ -48,16 +46,42 @@
 
     <body>
         <div class="jumbotron" style="background:rgb(224, 228, 185)">
-        <div class="container p-4">
-            <div class="box border-dark rounded p-4" style="background-color: rgba(208, 221, 151, 0.888);border-style: double;">
+        <div class="container p-2">
+            <div class=" responsive rounded p-4" style="background-color: rgba(208, 221, 151, 0.888);border-style: double; border-width: 3px;">
+                <h2 style="text-align: center;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><strong> Maharashtra Building & Other Construction Worker<br>Welfare Association ,Mumbai</strong></h2>
+                <br>  
+              <h2 style="text-align: center;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">EDUCATIONAL SCHEME APPLICATION FORM</h2>  
+            </div> 
+            <!--   
+              ===========  REGISTRATION NO. DETAIL=======================
 
-              <h1 style="text-align: center;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">EDUCATION FORM</h1>  
-            </div>
+            -->
+            <br>
+           
+                <div class=" border border-dark rounded p-4" style="background-color:rgb(178, 182, 129)">
+                    <form>
+                    <h6>Registration No.<span class="text-danger"><b>*</b></span></h6>
+                    
+                        
+            <input type="number" name="" value="" placeholder="Reg. No.">
+            <br> 
+        
+              <button  type="button" class="" name="button"> Check and Validate </button>
+              </form>
+                
+    
+            
+              </div>
+            <br>
             <br>
             
                     <!--
-					APPLICANT DETAILS
-				-->
+
+
+					===========APPLICANT DETAILS============
+
+
+                -->
 				
             <h6>1.Applicant's details<span class="text-danger"><b>*</b></span></h6>
                  <div class="row border border-dark  rounded p-4" style="background:rgb(178, 182, 129)">
@@ -104,7 +128,7 @@
                      
                  </div> 
                  <!--
-					REGISTRATION DETAILS
+					================  REGISTRATION DETAILS   ====================
 				-->
 				
                  <br>
@@ -134,7 +158,7 @@
                        
                  </div> 
                  <!--
-					BANK DETAILS
+					==================   BANK DETAILS   =========================
 				-->
                  <br>
                  <h6>3.Bank details<span class="text-danger"><b>*</b></span></h6>
@@ -171,7 +195,7 @@
                  </div> 
                  	
 				<!--
-					CHILD DETAILS
+					========    CHILD DETAILS=================
 				-->
                  <br>
                  <h6>4.Child details<span class="text-danger"><b>*</b></span></h6>
@@ -204,7 +228,7 @@
                      
                  </div> 
                  	<!--
-					SCHEME DETAILS
+					 =============== SCHEME DETAILS  ==============
 				-->
               
                 <br>
@@ -230,7 +254,8 @@
                 </div> 
                 
                  	<!--
-				DOCUMENT DETAILS 
+                
+                ================        DOCUMENT DETAILS     ================
             -->
                      <br>
                      <label ><h6>6. I undersigned below,that I will submit alldocuments for given education scheme form A & B.</h6></label>
@@ -239,13 +264,14 @@
                
 
                  	<!--
-				DOCUMENT DETAILS 6(A)
+            
+              ===================          DOCUMENT DETAILS 6(A)   ============
             -->
             <br>
 			
                 <label style="background:rgb(224, 228, 185)" ><h6>&nbsp;6(A). Document details<span class="text-danger"><b>*&nbsp;</b></span></h6></label>
                 <span class="text-danger small"> &nbsp;&nbsp;(scroll right to view full table,if not visible)</span>
-                <table class="table table-responsive-md table-bordered table-hover" style="background-color: rgba(149, 160, 102, 0.8);">
+                <table class="table table-responsive-md table-bordered table-hover" style="background-color: rgb(168, 180, 114); ">
                     <thead style="background:rgb(207, 211, 164);">
                         <tr>
                             <th>Sr.No:</th>
@@ -278,14 +304,15 @@
                     </tbody>
                 </table>
             	<!--
-				DOCUMENT DETAILS 6(B)
+
+				=================  DOCUMENT DETAILS 6(B)  ==================
             -->
 
             <br>
 			
             <label style="background:rgb(224, 228, 185)" class="pt-1"><h6>&nbsp;6(B).Other document details&nbsp;</h6></label>
             <span class="text-danger small"> &nbsp;&nbsp;(scroll right to view full table,if not visible)</span>
-            <table class="table  table-responsive-md table-bordered table-hover " style="background-color: rgba(149, 160, 102, 0.8); ">
+            <table class="table  table-responsive-md table-bordered table-hover " style="background-color: rgb(168, 180, 114);  ">
                 <thead style="background:rgb(207, 211, 164);">
                     <tr>
                         <th>Scheme</th>
@@ -344,6 +371,13 @@
             </table>
     </div>
         <br>
+        <!--
+
+          
+           ============= for  uploading image  =================
+     
+     
+        -->
 
       
 
@@ -358,26 +392,68 @@
                   <input type="file" name="inpFile" id="inpFile"> 
 
             </div>
+            <!--
+                ================= Declaration =====================
+            -->
+            <br>
+
+            <h6>
+                &emsp;&emsp; I declare that my bank details are correct in above application form.Furthermore,I have no objection 
+                if given amount will be credited  in my bank account.Also,my mobile no. is correct for further contact .
+                I also declare that all above informations are correct.If given information find to be incorrect, then
+                I agree for judicial treatment against me.
+            </h6>
+
+
+<!--
+
+=======================   submission  details    =============================
+
+
+-->
+
             <br>
           
             <div class="row border border-dark rounded p-4" style="background:rgb(178, 182, 129)">
                
                    <form>
-                       <div class="form-group-internal col md-2">
-                           <label for="id_sub_date"><h6>Date of submission:-</h6></label><br>
-                           <input  type="date" placeholder="  Date" id="id_sub_date" name="id_sub_date" class="form-cotrol"></input>
-                       </div>
+                    <div class="form-group-internal col md-2">
+                        <label for="id_nname"><h6>Applicant's Name:-</h6></label><br>
+                        <input   type="text" placeholder="  Name" id="id_name" name="id_name"class="form-cotrol"></input>
+                    </div>
 
-                   </form>
-                  
-                   <form>
-                       <div class="form-group-internal col md-2">
-                           <label for="id_place"><h6>Place:-</h6></label><br>
-                           <input   type="text" placeholder="  Place" id="id_place" name="place"class="form-cotrol"></input>
-                       </div>
+                </form>
+                <form>
+                    <div class="form-group-internal col md-2">
+                        <label for="id_sub_date"><h6>Date of submission:-</h6></label><br>
+                        <input  type="date" placeholder="  Date" id="id_sub_date" name="id_sub_date" class="form-cotrol"></input>
+                    </div>
 
-                   </form>
+                </form>
+               
+                <form>
+                    <div class="form-group-internal col md-2">
+                        <label for="id_place"><h6>Place:-</h6></label><br>
+                        <input   type="text" placeholder="  Place" id="id_place" name="place"class="form-cotrol"></input>
+                    </div>
+
+                </form>
+                 
+                <form>
+                    <div class="form-group-internal col md-2">
+                        <label for="id_place"><h6>Applicant's Signature:-</h6></label><br>
+                        <input   type="file" name="sign_file"></input>
+                    </div>
+
+                </form>
                    </div>
+
+
+                   <!--   
+
+             ==============   submission section     ============================
+
+                   -->
             <br>
 
 
@@ -386,7 +462,7 @@
                 <input class='btn-lg btn-primary' type='submit'value="Request Reservation">
                 <br>
                 <br>
-                
+
               
                <input class='btn-lg btn-danger' type='reset' value='Cancel'>
             </div>
@@ -398,7 +474,14 @@
 
          </div>
          </div>
-         <!-- ===========    for image preview    ===========
+         
+         
+
+<!-- 
+    
+    
+                                     javascript
+    =========================for image upload and previe====================================
 
 
 
@@ -433,7 +516,9 @@
 
             );
         </script>
+
     -->
+    
        
     </body> 
 </html>
