@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>FORM</title>
+        <title>FORM 1</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -9,10 +9,66 @@
 
             <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    </head>
+            <style>
+                input[type=checkbox]
+                      {
+                      /* Double-sized Checkboxes */
+                      -ms-transform: scale(1.5); /* IE */
+                      -moz-transform: scale(1.5); /* FF */
+                      -webkit-transform: scale(1.5); /* Safari and Chrome */
+                      -o-transform: scale(1.5); /* Opera */
+                      padding: 5px;
+                      }
+                .image-preview
+                {
+                    width:150px;
+                    height:150px;
+                    border:1px solid #000;
+                    background-color:  rgba(110, 202, 209, 0.411); 
+                    /*default text*/
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color:rgb(0, 0, 0);
+                }  
+                .image-preview__image
+                {
+                    display:none;
+                    width:100%;
+                }    
+  
+  
+          </style>
+  
+  
+  
+        </head>
 
     <body>
         <div class="container p-4">
+            <div class=" responsive rounded p-4" style="background-color: rgba(110, 202, 209, 0.411);border-style: double; border-width: 3px;">
+                <h2 style="text-align: center;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><strong> Maharashtra Building & Other Construction Worker<br>Welfare Association ,Mumbai</strong></h2>
+                <br>  
+              <h2 style="text-align: center;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">FINANCE SCHEME APPLICATION FORM</h2>  
+            </div>
+            <br>
+            <strong class="text-danger small" style=display:inline;>&nbsp;&nbsp; *</strong><span class="text-danger small">(Required field to be filled is compulsory)</span>
+            <br>
+            
+            <div class=" border border-dark rounded p-4" style="background-color:rgb(242, 248, 255)">
+                <form>
+                <h6>Registration No.<span class="text-danger"><b>*</b></span></h6>
+                
+                    
+        <input type="number" name="" value="" placeholder="Reg. No.">
+        <br> 
+    
+          <button  type="button" class="" name="button"> Check and Validate </button>
+          </form>
+        
+          </div>
+        <br>
+        <br>
             <h6>1.Applicant's details<span class="text-danger"><b>*</b></span></h6>
                  <div class="row border border-dark rounded p-4" style="background:rgb(242, 248, 255)">
 
@@ -83,7 +139,7 @@
                           </form>
                         <form>
                             <div class="form-group-internal col md-2 ">
-                                    <label for="Aadhar-Card No."><h6>Aadhar-Card No.:-</h6></label><br>
+                                    <label for="Aadhar-Card No."><h6>Aaadhar-Card No.:-</h6></label><br>
                                       <input class="form-control" type="text" placeholder="8888 9999 1111" id="Aadhar-Card No.">
                             </div>
 
@@ -137,7 +193,7 @@
                         <form>
                             <div class="form-group-internal col md-2">
                                 <label for="id_scheme_no."><h6>Scheme No.</h6></label><br>
-                                <input  type="text" placeholder="  Scheme Number" id="id_scheme_no." name="id_scheme_no." class="form-cotrol"></input>
+                                <input  type="text" value="  F- " id="id_scheme_no." name="id_scheme_no." class="form-cotrol"></input>
                             </div>
 
                         </form>
@@ -151,14 +207,24 @@
                         </form>
                      
                  </div> 
+
+
+                  
+                 	<!--
+                
+                ================        DOCUMENT DETAILS     ================
+            -->
+            <br>
+            <label ><h6>5. I undersigned below,that I will submit all documents for given finance scheme in form A & B.</h6></label>
                  	<!--
 				DOCUMENT DETAILS 5(A)
             -->
             <br>
 			
                 <label ><h6>5(A). Document Details<span class="text-danger"><b>*</b></span></h6></label>
+                <span class="text-danger small"> &nbsp;&nbsp;(scroll right to view full table,if not visible)</span>
                 <div class="row border border-dark rounded p-4" style="background:rgb(242, 248, 255)">
-                <table class="table table-bordered" style="border: black;">
+                <table class="table  table-responsive-md table-hover table-bordered" style="border: black;">
                     <thead>
                         <tr>
                             <th>Serial No:</th>
@@ -168,18 +234,19 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td> 1)</td>
+                            <td> 1.</td>
                             <td>Identity Card </td>
                             <td><input  type='checkbox'></td>
                         </tr>
                         <tr>
-                        <td> 2)</td>
+                        <td> 2.</td>
                         <td>Bank Passbook</td>
                         <td><input  type='checkbox'></td>
                         </tr>
                         <tr>
-                        <td> 3)</td>
-                        <td>Residential Proof</td>
+                        <td> 3.</td>
+                        <td>Residential Proof -(Aadhar-Card/passport/driving license/ration card/electricity bill
+                            /grampanchayat certificate)</td>
                         <td><input  type='checkbox'></td>
                         </tr>
                     </tbody>
@@ -192,7 +259,8 @@
             <br>
 			
             <label ><h6>5(B). Document Details</h6></label>
-            <div class="row border border-dark rounded" style="background:rgb(242, 248, 255)">
+            <span class="text-danger small"> &nbsp;&nbsp;(scroll right to view full table,if not visible)</span>
+            <div class="row border border-dark rounded p-4" style="background:rgb(242, 248, 255)">
             <table class="table  table-responsive-md table-bordered " style="border: black;">
                 <thead>
                     <tr>
@@ -204,27 +272,132 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>F01</td>
+                        <td>F-01</td>
                         <td>&#8377 5 lakhs for nominee<br>-if construction worker die on working site</td>
                         <td>-Death certificate by medical officer<br>-proof of death on working site<br>
                         -FIR/Contractor certificate</td>
                         <td><input  type='checkbox'></td>
                     </tr>
                     <tr>
-                    <td>F02</td>
+                    <td>F-02</td>
                     <td>&#8377 2 lakhs <br>-for natural death</td>
                     <td>-Death certificate from medical officer</td>
                     <td><input  type='checkbox'></td>
                     </tr>
                     <tr>
-                    <td>F03</td>
+                    <td>F-03</td>
                     <td>-Upto &#8377 6 lakhs of interest amount for housing loan<br>OR<br>-&#8377 2 lakhs for purchase/construction of house</td>
                     <td>-proof of housing loan A/c of nationalise bank/<br>-workers loan insurance receipt/<br>-declaration certificate</td>
                     <td><input  type='checkbox'></td>
                     </tr>
+                    <tr>
+                        <td>F-04</td>
+                        <td>&#8377 2 lakhs for registered building construction workers under P.M. Aawas Scheme </td>
+                        <td>Certificate given by authorized officer</td>
+                        <td><input  type='checkbox'></td>
+                    </tr>
+                    <tr>
+                        <td>F-05</td>
+                        <td>&#8377 10,000/-for funeral of dead</td>
+                        <td>Death certificate given by authorized medical officer</td>
+                        <td><input  type='checkbox'></td>
+                    </tr>
+                    <tr>
+                        <td>F-06</td>
+                        <td>After worker's death,is/her nominees will get &#8377 24,000/-<br>-(for 5 years each year application may be compulsory)</td>
+                        <td>Death certificate given by authorized medical </td>
+                        <td><input  type='checkbox'></td>
+                    </tr>
+
                 </tbody>
             </table>
         </div>
+        <br>
+        <!--
+
+          
+           ============= for  uploading image  =================
+     
+     
+        -->
+
+      
+
+          
+         <h6>Upload Image<span class="text-danger">*</spaanclass></h6>
+          <div class="box border border-dark rounded p-4"style="background:rgb(242, 248, 255);">
+                  <div class="image-preview" id="imagePreview">
+                      <img src="" alt="Image Preview" class="image-preview__image">
+                      <span class="image-preview__default-text">Image Preview</span>
+                  </div>
+                  <br>
+                  <input type="file" name="inpFile" id="inpFile"> 
+
+            </div>
+            <!--
+                ================= Declaration =====================
+            -->
+            <br>
+
+            <h6>
+                &emsp;&emsp; I declare that my bank details are correct in above application form.Furthermore,I have no objection 
+                if given amount will be credited  in my bank account.Also,my mobile no. is correct for further contact .
+                I also declare that all above informations are correct.If given information find to be incorrect, then
+                I agree for judicial treatment against me.
+            </h6>
+
+
+<!--
+
+=======================   submission  details    =============================
+
+
+-->
+
+            <br>
+          
+            <div class="row border border-dark rounded p-4" style="background:rgb(242, 248, 255)">
+               
+                   <form>
+                    <div class="form-group-internal col md-2">
+                        <label for="id_nname"><h6>Applicant's Name:-</h6></label><br>
+                        <input   type="text" placeholder="  Name" id="id_name" name="id_name"class="form-cotrol"></input>
+                    </div>
+
+                </form>
+                <form>
+                    <div class="form-group-internal col md-2">
+                        <label for="id_sub_date"><h6>Date of submission:-</h6></label><br>
+                        <input  type="date" placeholder="  Date" id="id_sub_date" name="id_sub_date" class="form-cotrol"></input>
+                    </div>
+
+                </form>
+               
+                <form>
+                    <div class="form-group-internal col md-2">
+                        <label for="id_place"><h6>Place:-</h6></label><br>
+                        <input   type="text" placeholder="  Place" id="id_place" name="place"class="form-cotrol"></input>
+                    </div>
+
+                </form>
+                 
+                <form>
+                    <div class="form-group-internal col md-2">
+                        <label for="id_place"><h6>Applicant's Signature:-</h6></label><br>
+                        <input   type="file" name="sign_file"></input>
+                    </div>
+
+                </form>
+                   </div>
+
+        <br>
+        <div class='form-group'>
+            
+              <input class='btn-lg btn-success' type='submit'value="Submit">
+            
+              <input class='btn-lg btn-danger' type='reset' value='Cancel'>
+          </div>
+       
       
 
          </div>
